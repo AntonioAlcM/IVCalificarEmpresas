@@ -1,0 +1,19 @@
+{% extends "index.html" %}
+
+{% block body %}
+
+{% block contenido %}
+<div class="container" >
+	<h2>Información Empresa</h2>
+	<ul class="list-group">
+		<li class="list-group-item">Nombre <span class="badge">{{record.Nombre}}</span></li>
+		<li class="list-group-item">Año de creacion <span class="badge">{{record.AnhoCreacion}}</span></li>
+		<li class="list-group-item">Empresa_id <span class="badge">{{record.Empresa_id}}</span></li>
+	</ul>
+</div>
+</div>
+
+
+
+{% endblock %}
+{% endblock %}

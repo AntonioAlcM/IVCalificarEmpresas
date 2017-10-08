@@ -1,0 +1,54 @@
+
+{% extends "index.html" %}
+
+{% block body %}
+
+{% block contenido %}
+
+<div class="container">
+<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main" style="width: 80%">
+			<h1 class="page-header">Ranking empresas</h1>
+			<div class="table-responsive">
+				<table class="table" id="acrylic">
+					<thead>
+
+						<tr>
+							<th>Nombre</th>
+							<th>Año de creación</th>
+							<th>Empresa_id</th>
+							<th>Calificación</th>
+
+						</tr>
+					</thead>
+
+					<ul class="pagination" >
+						<li onclick="llamar_ajax(0)"><a href="javascript:void(0);">1</a></li>
+						<li onclick="llamar_ajax(10)"><a href="javascript:void(0);">2</a></li>
+
+					</ul>
+
+					<tbody>
+
+						{%for record in coleccion %}
+
+
+						<tr >
+							<td> <a href=""  id="pi">{{record.Nombre}}
+							</td>
+							<td> <a href=""  id="pi">{{record.AnhoCreacion}}
+							</td>
+							<td> <a href=""  id="pi">{{record.Empresa_id}}
+							</td>
+							<td> <a href=""  id="pi">{{record.Calificacion}}
+							</td>
+						</tr>
+
+									{% endfor %}
+								</tbody>
+							</table>
+						</div>
+					</div>
+					</div>
+
+{% endblock %}
+{% endblock %}
