@@ -1,4 +1,5 @@
-# IVCalificarEmpresas
+# IVCalificarEmpresas  
+[![Build Status](https://travis-ci.org/AntonioAlcM/IVCalificarEmpresas.svg?branch=master)](https://travis-ci.org/AntonioAlcM/IVCalificarEmpresas)  
 Como ejercicio, algo ligeramente diferente: una web para calificar las empresas en las que hacen prácticas los alumnos.   Las acciones serían: 
 1. Crear empresa 
 2. Listar calificaciones para cada empresa 
